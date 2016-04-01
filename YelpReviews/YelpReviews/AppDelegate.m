@@ -10,17 +10,13 @@
 #import "UIColor+YRColorScheme.h"
 
 @interface AppDelegate ()
-- (void) setupColors;
+
 @end
 
 @implementation AppDelegate
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    
-    
-    [self setupColors];
-    
     return YES;
 }
 
@@ -46,7 +42,4 @@
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
 
-- (void) setupColors {
-    
-}
 @end

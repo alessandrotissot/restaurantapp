@@ -1,0 +1,524 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8173211811466FF694FA02B0 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4384B2786668461F985D1E89 /* Pods.framework */; };
+		843D73601CACBAED0060C785 /* YRAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 843D735F1CACBAED0060C785 /* YRAnnotation.m */; };
+		843D73631CACC39E0060C785 /* YRReview.m in Sources */ = {isa = PBXBuildFile; fileRef = 843D73621CACC39E0060C785 /* YRReview.m */; };
+		848B48131CADF38100EFA44E /* UIColor+YRColorScheme.m in Sources */ = {isa = PBXBuildFile; fileRef = 848B48121CADF38100EFA44E /* UIColor+YRColorScheme.m */; };
+		848B48161CAE12AB00EFA44E /* YRPhotoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 848B48151CAE12AB00EFA44E /* YRPhotoCell.m */; };
+		848D1F3E1CAB308A00435B08 /* YRRestaurantDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 848D1F3B1CAB308A00435B08 /* YRRestaurantDetailsViewController.m */; };
+		848D1F3F1CAB308A00435B08 /* YRRestaurantListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 848D1F3D1CAB308A00435B08 /* YRRestaurantListViewController.m */; };
+		848D1F481CAB315A00435B08 /* YRRestaurantCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 848D1F471CAB315A00435B08 /* YRRestaurantCell.m */; };
+		848D1F4D1CAB349100435B08 /* YRBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 848D1F4C1CAB349100435B08 /* YRBaseViewController.m */; };
+		848D1F501CAB5E1100435B08 /* YRRestaurant.m in Sources */ = {isa = PBXBuildFile; fileRef = 848D1F4E1CAB5E1100435B08 /* YRRestaurant.m */; };
+		848D1F571CAB605D00435B08 /* NSDictionary+ExtractData.m in Sources */ = {isa = PBXBuildFile; fileRef = 848D1F561CAB605D00435B08 /* NSDictionary+ExtractData.m */; };
+		848D1F5A1CAB787800435B08 /* YRImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 848D1F591CAB787800435B08 /* YRImageCache.m */; };
+		848D1F5D1CAC9F1000435B08 /* YRRestaurant+ActiveRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = 848D1F5C1CAC9F1000435B08 /* YRRestaurant+ActiveRecord.m */; };
+		848D1F621CACB76100435B08 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 848D1F611CACB76100435B08 /* MapKit.framework */; };
+		849A64321CAAF3FE00EEB31C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 849A64311CAAF3FE00EEB31C /* main.m */; };
+		849A64351CAAF3FE00EEB31C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 849A64341CAAF3FE00EEB31C /* AppDelegate.m */; };
+		849A643B1CAAF3FE00EEB31C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 849A64391CAAF3FE00EEB31C /* Main.storyboard */; };
+		849A643D1CAAF3FE00EEB31C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 849A643C1CAAF3FE00EEB31C /* Assets.xcassets */; };
+		849A64401CAAF3FE00EEB31C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 849A643E1CAAF3FE00EEB31C /* LaunchScreen.storyboard */; };
+		84E409F01CAAF5580087FC44 /* YRYelpClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E409EF1CAAF5580087FC44 /* YRYelpClient.m */; };
+		84E409F31CAAF9BD0087FC44 /* YRError.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E409F21CAAF9BD0087FC44 /* YRError.m */; };
+		84ED65521CAE2FC0005821D2 /* YRImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 84ED65511CAE2FC0005821D2 /* YRImageView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		4384B2786668461F985D1E89 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7161A08BB8661E197A471E8F /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		73F6C90B79BEE4A3C2877EF1 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		843D735E1CACBAED0060C785 /* YRAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YRAnnotation.h; path = Util/YRAnnotation.h; sourceTree = "<group>"; };
+		843D735F1CACBAED0060C785 /* YRAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YRAnnotation.m; path = Util/YRAnnotation.m; sourceTree = "<group>"; };
+		843D73611CACC39E0060C785 /* YRReview.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YRReview.h; path = Models/YRReview.h; sourceTree = "<group>"; };
+		843D73621CACC39E0060C785 /* YRReview.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YRReview.m; path = Models/YRReview.m; sourceTree = "<group>"; };
+		848B48111CADF38100EFA44E /* UIColor+YRColorScheme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIColor+YRColorScheme.h"; path = "Util/UIColor+YRColorScheme.h"; sourceTree = "<group>"; };
+		848B48121CADF38100EFA44E /* UIColor+YRColorScheme.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIColor+YRColorScheme.m"; path = "Util/UIColor+YRColorScheme.m"; sourceTree = "<group>"; };
+		848B48141CAE12AB00EFA44E /* YRPhotoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YRPhotoCell.h; path = CustomCells/YRPhotoCell.h; sourceTree = "<group>"; };
+		848B48151CAE12AB00EFA44E /* YRPhotoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YRPhotoCell.m; path = CustomCells/YRPhotoCell.m; sourceTree = "<group>"; };
+		848D1F3A1CAB308A00435B08 /* YRRestaurantDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YRRestaurantDetailsViewController.h; path = ViewControllers/YRRestaurantDetailsViewController.h; sourceTree = "<group>"; };
+		848D1F3B1CAB308A00435B08 /* YRRestaurantDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YRRestaurantDetailsViewController.m; path = ViewControllers/YRRestaurantDetailsViewController.m; sourceTree = "<group>"; };
+		848D1F3C1CAB308A00435B08 /* YRRestaurantListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YRRestaurantListViewController.h; path = ViewControllers/YRRestaurantListViewController.h; sourceTree = "<group>"; };
+		848D1F3D1CAB308A00435B08 /* YRRestaurantListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YRRestaurantListViewController.m; path = ViewControllers/YRRestaurantListViewController.m; sourceTree = "<group>"; };
+		848D1F461CAB315A00435B08 /* YRRestaurantCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YRRestaurantCell.h; path = CustomCells/YRRestaurantCell.h; sourceTree = "<group>"; };
+		848D1F471CAB315A00435B08 /* YRRestaurantCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YRRestaurantCell.m; path = CustomCells/YRRestaurantCell.m; sourceTree = "<group>"; };
+		848D1F4B1CAB349100435B08 /* YRBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YRBaseViewController.h; path = ViewControllers/YRBaseViewController.h; sourceTree = "<group>"; };
+		848D1F4C1CAB349100435B08 /* YRBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YRBaseViewController.m; path = ViewControllers/YRBaseViewController.m; sourceTree = "<group>"; };
+		848D1F4E1CAB5E1100435B08 /* YRRestaurant.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YRRestaurant.m; path = Models/YRRestaurant.m; sourceTree = "<group>"; };
+		848D1F4F1CAB5E1100435B08 /* YRRestaurant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YRRestaurant.h; path = Models/YRRestaurant.h; sourceTree = "<group>"; };
+		848D1F551CAB605D00435B08 /* NSDictionary+ExtractData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSDictionary+ExtractData.h"; path = "Util/NSDictionary+ExtractData.h"; sourceTree = "<group>"; };
+		848D1F561CAB605D00435B08 /* NSDictionary+ExtractData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSDictionary+ExtractData.m"; path = "Util/NSDictionary+ExtractData.m"; sourceTree = "<group>"; };
+		848D1F581CAB787800435B08 /* YRImageCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YRImageCache.h; path = Util/YRImageCache.h; sourceTree = "<group>"; };
+		848D1F591CAB787800435B08 /* YRImageCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YRImageCache.m; path = Util/YRImageCache.m; sourceTree = "<group>"; };
+		848D1F5B1CAC9F1000435B08 /* YRRestaurant+ActiveRecord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "YRRestaurant+ActiveRecord.h"; path = "Models/YRRestaurant+ActiveRecord.h"; sourceTree = "<group>"; };
+		848D1F5C1CAC9F1000435B08 /* YRRestaurant+ActiveRecord.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "YRRestaurant+ActiveRecord.m"; path = "Models/YRRestaurant+ActiveRecord.m"; sourceTree = "<group>"; };
+		848D1F611CACB76100435B08 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		849A642D1CAAF3FE00EEB31C /* YelpReviews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YelpReviews.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		849A64311CAAF3FE00EEB31C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		849A64331CAAF3FE00EEB31C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		849A64341CAAF3FE00EEB31C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		849A643A1CAAF3FE00EEB31C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		849A643C1CAAF3FE00EEB31C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		849A643F1CAAF3FE00EEB31C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		849A64411CAAF3FE00EEB31C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84E409EE1CAAF5580087FC44 /* YRYelpClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YRYelpClient.h; path = DataLayer/YRYelpClient.h; sourceTree = "<group>"; };
+		84E409EF1CAAF5580087FC44 /* YRYelpClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YRYelpClient.m; path = DataLayer/YRYelpClient.m; sourceTree = "<group>"; };
+		84E409F11CAAF9BD0087FC44 /* YRError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YRError.h; path = Models/YRError.h; sourceTree = "<group>"; };
+		84E409F21CAAF9BD0087FC44 /* YRError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YRError.m; path = Models/YRError.m; sourceTree = "<group>"; };
+		84ED65501CAE2FC0005821D2 /* YRImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YRImageView.h; path = ViewControllers/YRImageView.h; sourceTree = "<group>"; };
+		84ED65511CAE2FC0005821D2 /* YRImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YRImageView.m; path = ViewControllers/YRImageView.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		849A642A1CAAF3FE00EEB31C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				848D1F621CACB76100435B08 /* MapKit.framework in Frameworks */,
+				8173211811466FF694FA02B0 /* Pods.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		58E8DB3FBF043F54E2452242 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				848D1F611CACB76100435B08 /* MapKit.framework */,
+				4384B2786668461F985D1E89 /* Pods.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		848D1F541CAB601500435B08 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				848D1F551CAB605D00435B08 /* NSDictionary+ExtractData.h */,
+				848D1F561CAB605D00435B08 /* NSDictionary+ExtractData.m */,
+				848D1F581CAB787800435B08 /* YRImageCache.h */,
+				848D1F591CAB787800435B08 /* YRImageCache.m */,
+				843D735E1CACBAED0060C785 /* YRAnnotation.h */,
+				843D735F1CACBAED0060C785 /* YRAnnotation.m */,
+				848B48111CADF38100EFA44E /* UIColor+YRColorScheme.h */,
+				848B48121CADF38100EFA44E /* UIColor+YRColorScheme.m */,
+			);
+			name = Util;
+			sourceTree = "<group>";
+		};
+		849A64241CAAF3FE00EEB31C = {
+			isa = PBXGroup;
+			children = (
+				849A642F1CAAF3FE00EEB31C /* YelpReviews */,
+				849A642E1CAAF3FE00EEB31C /* Products */,
+				FE122D1E9B3ADD7FE27F468F /* Pods */,
+				58E8DB3FBF043F54E2452242 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		849A642E1CAAF3FE00EEB31C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				849A642D1CAAF3FE00EEB31C /* YelpReviews.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		849A642F1CAAF3FE00EEB31C /* YelpReviews */ = {
+			isa = PBXGroup;
+			children = (
+				849A64331CAAF3FE00EEB31C /* AppDelegate.h */,
+				849A64341CAAF3FE00EEB31C /* AppDelegate.m */,
+				849A64411CAAF3FE00EEB31C /* Info.plist */,
+				849A643C1CAAF3FE00EEB31C /* Assets.xcassets */,
+				84E409E41CAAF4D50087FC44 /* CustomCells */,
+				84E409E31CAAF4CC0087FC44 /* DataLayer */,
+				849A643E1CAAF3FE00EEB31C /* LaunchScreen.storyboard */,
+				849A64391CAAF3FE00EEB31C /* Main.storyboard */,
+				84E409E11CAAF4BA0087FC44 /* Models */,
+				849A64301CAAF3FE00EEB31C /* Supporting Files */,
+				848D1F541CAB601500435B08 /* Util */,
+				84E409E21CAAF4C40087FC44 /* ViewControllers */,
+			);
+			path = YelpReviews;
+			sourceTree = "<group>";
+		};
+		849A64301CAAF3FE00EEB31C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				849A64311CAAF3FE00EEB31C /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		84E409E11CAAF4BA0087FC44 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				84E409F11CAAF9BD0087FC44 /* YRError.h */,
+				84E409F21CAAF9BD0087FC44 /* YRError.m */,
+				848D1F4F1CAB5E1100435B08 /* YRRestaurant.h */,
+				848D1F4E1CAB5E1100435B08 /* YRRestaurant.m */,
+				848D1F5B1CAC9F1000435B08 /* YRRestaurant+ActiveRecord.h */,
+				848D1F5C1CAC9F1000435B08 /* YRRestaurant+ActiveRecord.m */,
+				843D73611CACC39E0060C785 /* YRReview.h */,
+				843D73621CACC39E0060C785 /* YRReview.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		84E409E21CAAF4C40087FC44 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				848D1F3A1CAB308A00435B08 /* YRRestaurantDetailsViewController.h */,
+				848D1F3B1CAB308A00435B08 /* YRRestaurantDetailsViewController.m */,
+				848D1F3C1CAB308A00435B08 /* YRRestaurantListViewController.h */,
+				848D1F3D1CAB308A00435B08 /* YRRestaurantListViewController.m */,
+				848D1F4B1CAB349100435B08 /* YRBaseViewController.h */,
+				848D1F4C1CAB349100435B08 /* YRBaseViewController.m */,
+				84ED65501CAE2FC0005821D2 /* YRImageView.h */,
+				84ED65511CAE2FC0005821D2 /* YRImageView.m */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		84E409E31CAAF4CC0087FC44 /* DataLayer */ = {
+			isa = PBXGroup;
+			children = (
+				84E409EE1CAAF5580087FC44 /* YRYelpClient.h */,
+				84E409EF1CAAF5580087FC44 /* YRYelpClient.m */,
+			);
+			name = DataLayer;
+			sourceTree = "<group>";
+		};
+		84E409E41CAAF4D50087FC44 /* CustomCells */ = {
+			isa = PBXGroup;
+			children = (
+				848D1F461CAB315A00435B08 /* YRRestaurantCell.h */,
+				848D1F471CAB315A00435B08 /* YRRestaurantCell.m */,
+				848B48141CAE12AB00EFA44E /* YRPhotoCell.h */,
+				848B48151CAE12AB00EFA44E /* YRPhotoCell.m */,
+			);
+			name = CustomCells;
+			sourceTree = "<group>";
+		};
+		FE122D1E9B3ADD7FE27F468F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7161A08BB8661E197A471E8F /* Pods.debug.xcconfig */,
+				73F6C90B79BEE4A3C2877EF1 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		849A642C1CAAF3FE00EEB31C /* YelpReviews */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 849A64441CAAF3FE00EEB31C /* Build configuration list for PBXNativeTarget "YelpReviews" */;
+			buildPhases = (
+				BF35D82DFE8CC6E30E340F32 /* Check Pods Manifest.lock */,
+				849A64291CAAF3FE00EEB31C /* Sources */,
+				849A642A1CAAF3FE00EEB31C /* Frameworks */,
+				849A642B1CAAF3FE00EEB31C /* Resources */,
+				93EAA02A278E6EB9677A0AEC /* Embed Pods Frameworks */,
+				1C827466E4B2D6ABDF2FDB51 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YelpReviews;
+			productName = YelpReviews;
+			productReference = 849A642D1CAAF3FE00EEB31C /* YelpReviews.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		849A64251CAAF3FE00EEB31C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Alessandro Tissot";
+				TargetAttributes = {
+					849A642C1CAAF3FE00EEB31C = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = 86LSAM3R4Q;
+					};
+				};
+			};
+			buildConfigurationList = 849A64281CAAF3FE00EEB31C /* Build configuration list for PBXProject "YelpReviews" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 849A64241CAAF3FE00EEB31C;
+			productRefGroup = 849A642E1CAAF3FE00EEB31C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				849A642C1CAAF3FE00EEB31C /* YelpReviews */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		849A642B1CAAF3FE00EEB31C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				849A64401CAAF3FE00EEB31C /* LaunchScreen.storyboard in Resources */,
+				849A643D1CAAF3FE00EEB31C /* Assets.xcassets in Resources */,
+				849A643B1CAAF3FE00EEB31C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1C827466E4B2D6ABDF2FDB51 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		93EAA02A278E6EB9677A0AEC /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BF35D82DFE8CC6E30E340F32 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		849A64291CAAF3FE00EEB31C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84E409F01CAAF5580087FC44 /* YRYelpClient.m in Sources */,
+				848D1F481CAB315A00435B08 /* YRRestaurantCell.m in Sources */,
+				84E409F31CAAF9BD0087FC44 /* YRError.m in Sources */,
+				84ED65521CAE2FC0005821D2 /* YRImageView.m in Sources */,
+				848D1F501CAB5E1100435B08 /* YRRestaurant.m in Sources */,
+				848D1F3E1CAB308A00435B08 /* YRRestaurantDetailsViewController.m in Sources */,
+				848B48131CADF38100EFA44E /* UIColor+YRColorScheme.m in Sources */,
+				848D1F3F1CAB308A00435B08 /* YRRestaurantListViewController.m in Sources */,
+				848D1F5A1CAB787800435B08 /* YRImageCache.m in Sources */,
+				848D1F571CAB605D00435B08 /* NSDictionary+ExtractData.m in Sources */,
+				848D1F5D1CAC9F1000435B08 /* YRRestaurant+ActiveRecord.m in Sources */,
+				849A64351CAAF3FE00EEB31C /* AppDelegate.m in Sources */,
+				843D73601CACBAED0060C785 /* YRAnnotation.m in Sources */,
+				848D1F4D1CAB349100435B08 /* YRBaseViewController.m in Sources */,
+				848B48161CAE12AB00EFA44E /* YRPhotoCell.m in Sources */,
+				843D73631CACC39E0060C785 /* YRReview.m in Sources */,
+				849A64321CAAF3FE00EEB31C /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		849A64391CAAF3FE00EEB31C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				849A643A1CAAF3FE00EEB31C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		849A643E1CAAF3FE00EEB31C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				849A643F1CAAF3FE00EEB31C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		849A64421CAAF3FE00EEB31C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		849A64431CAAF3FE00EEB31C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		849A64451CAAF3FE00EEB31C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7161A08BB8661E197A471E8F /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = YelpReviews/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.alessandro.YelpReviews;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Debug;
+		};
+		849A64461CAAF3FE00EEB31C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 73F6C90B79BEE4A3C2877EF1 /* Pods.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = YelpReviews/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.alessandro.YelpReviews;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		849A64281CAAF3FE00EEB31C /* Build configuration list for PBXProject "YelpReviews" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				849A64421CAAF3FE00EEB31C /* Debug */,
+				849A64431CAAF3FE00EEB31C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		849A64441CAAF3FE00EEB31C /* Build configuration list for PBXNativeTarget "YelpReviews" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				849A64451CAAF3FE00EEB31C /* Debug */,
+				849A64461CAAF3FE00EEB31C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 849A64251CAAF3FE00EEB31C /* Project object */;
+}

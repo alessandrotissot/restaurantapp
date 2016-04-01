@@ -77,16 +77,6 @@
     _phoneLabel.text = _restaurant.displayPhone;
     _ratingLabel.text = [NSString stringWithFormat:@"Average rating: %0.1f", _restaurant.rating.doubleValue];
     
-    // Updates the restaurant object for one with more details
-    [YRRestaurant loadRestaurant: _restaurant.restaurantId
-         success:^(YRRestaurant *restaurant) {
-             _restaurant = restaurant;
-         }
-         failure:^(YRError *error) {
-             [self showError:error];
-         }
-     ];
-    
     YRYelpClient *client = [YRYelpClient sharedInstance];
     
     [client loadUserImages:_restaurant.restaurantId
